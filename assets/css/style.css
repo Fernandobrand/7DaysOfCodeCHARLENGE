@@ -4,27 +4,32 @@
     --second-color: #101828;
   }
 
+
 html{
     font-family: inter, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
 }
 
 
 /*********************/
 .navbar{
     display: grid;
-    grid: auto/ 1fr 1fr 1fr 1fr;
+    grid: auto/ 1fr 2fr 1.2fr;
     align-items: center;
     justify-items:center;
     justify-content: space-between;
-    padding: 1em 112px 1em 112px ;
+    padding: 1rem 0 ;
     font-weight: 500;
 }
 
 .navbar__logo{
     display: flex;
-    width: 100%;
+    width: fit-content;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 .logo__img{
     padding: 3px;
@@ -49,23 +54,21 @@ html{
 .menu__item a{
     text-decoration: none;
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .navbar__login{
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 .login__botao{
     background-color: var(--main-color);
     border-color: var(--main-color);
     border-radius: 8px;
     color: white;
-    font-size: 16px;
-    width: 112px;
-    height: 44px;
+    font-size: 1em;
     padding: 10px 18px 10px 18px;
 }
 .sem-destaque{
@@ -101,4 +104,35 @@ html{
     color: var(--text-color);
     text-align: center;
     line-height: 30px;
+}
+
+/*********/
+
+.metricas__lista{
+    display: flex;
+    padding: 0 5em;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.metricas__item{
+    padding: 0 1em;
+    width: 280px;
+}
+.metricas__item--titulo{
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--main-color);
+    padding-bottom: 10px;
+}
+.metricas__item--subtitulo{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--second-color);
+    line-height: 2.5em;
+}
+.metricas__item--texto{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.5em;
 }
