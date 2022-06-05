@@ -35,14 +35,15 @@
     </header>
 
     <main>
-       <div class="cabecalho">
+
+       <section class="cabecalho">
            <span class="cabecalho__generico"> Sobre nós</span>
            <h2 class="cabecalho__titulo"> Por que somos diferentes?</h2>
            <p class="cabecalho__texto"> Nós focamos nos detalhes de tudo que fazemos. 
                                         Tudo para ajudar as empresas de <br> todo o mundo a se concentrarem 
-                                        naquilo que é realmente importante para elas.</p>
-
-       </div>
+                                        naquilo que é realmente importante para elas.
+            </p>
+       </section>
 
        <section class="metricas"> 
            <ul class="metricas__lista">
@@ -73,14 +74,63 @@
            </ul>
        </section>
 
-       <div class="vagas">
-           <div class="vagas__talentos">
+       <section class="vagas">
+           <div class="vagas__banner">
+               <button class="vagas__botao"> Vagas abertas!</button>
+               <p class="vagas__banner--titulo">Estamos procurando por talentos</p>
+               <p class="vagas__banner--subtitulo">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+               <img  class="vagas__banner--imagem" src="./assets/img/banner-vagas.png" 
+               alt="Mesa de reunião entrevista de emprego discontraida e alegre."/>
+           </div>
 
-           </div>
            <div class="vagas__abertas">
-               
+               <ul class="vagas__lista">
+                   <p class="vagas__titulo"> Design</p>
+                   <li class="vagas__item">
+                       <p class="vagas__item--titulo"> Product Designer</p>
+                       <p class="vagas__item--descicao"> Full-time Faixa salarial: R$7.000</p>
+                   </li>
+                   <li class="vagas__item">
+                        <p class="vagas__item--titulo"> UX Designer</p>
+                        <p class="vagas__item--descicao"> Full-time Faixa salarial: R$6.000</p>
+                   </li>
+               </ul>
+                <ul class="vagas__lista">
+                    <p class="vagas__titulo"> Desenvolvedor de Software</p>
+                    <li class="vagas__item">
+                        <p class="vagas__item--titulo"> Desenvolvedor iOS</p>
+                        <p class="vagas__item--descicao"> Full-time Faixa salarial: R$8.000</p>
+                    </li>
+                    <li class="vagas__item">
+                        <p class="vagas__item--titulo"> Desenvolvedor Front-end</p>
+                        <p class="vagas__item--descicao"> Full-time Faixa salarial: R$7.000</p>    
+                    </li>
+                    <li class="vagas__item">
+                        <p class="vagas__item--titulo"> Desenvolvedor Back-end</p>
+                        <p class="vagas__item--descicao"> Full-time Faixa salarial: R$8.000</p>    
+                    </li>
+                </ul>
+            </div>
+       </section>
+
+       <section class="depoimentos">
+            <p class="depoimento__tag">Veja o que nossos colaboradores falam sobre nós</p>
+            <p class="depoimento__texto">OptimusTech se importa com a saúde dos seus 
+                colaboradores e sempre procura nos dar todo tipo de auxílio possível.</p>
+            <img src="./assets/img/Avatar.png" alt="Imagem avatar do usuário" class="depoimento__avatar"/>
+            <p class="depoimento__nome">Júlia Castro</p>
+            <p class="depoimento__profissao">Desenvolvedora Web</p>
+       </section>
+
+       <section class="formulario">
+           <div class="formulario__titulo">Acompanhe as nossas oportunidades</div>
+           <div class="formulario__subtitulo">Seja o primeiro a saber quando novas vagas serão abertas!</div>
+           <div class="formulario__input">
+               <input class="formulario__input--email" aria-label="Seu e-mail" value=" Seu e-mail">
+               <button class="formulario__input--botao">Cadastrar</button>
            </div>
-       </div>
+           <p class="copyright"> 2022 OptimusTech. Todos os direitos reservados.</p>
+       </section>
     </main>
 
     <footer>

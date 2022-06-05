@@ -2,8 +2,17 @@
     --text-color: #667085;
     --main-color: #8E2424;
     --second-color: #101828;
+    --border-color: #EAECF0;
+    --bg-color: rgba(142, 36, 36, 0.05);
+    --bg-color2:#F9FAFB;
   }
-
+/*
+  @mixin Titulo-style1 { /* se tivesse usando SCSS /
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--second-color);
+    line-height: 60px;
+  } */
 
 html{
     font-family: inter, sans-serif;
@@ -107,7 +116,10 @@ body{
 }
 
 /*********/
-
+.metricas{
+    padding-bottom: 4em;
+    max-width: 100%;
+}
 .metricas__lista{
     display: flex;
     padding: 0 5em;
@@ -135,4 +147,175 @@ body{
     font-size: 16px;
     color: var(--text-color);
     line-height: 1.5em;
+}
+
+/***************/
+.vagas{
+    padding-top: 4em;
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: space-between;
+}
+.vagas__banner{
+    height: 600px;
+    display: grid;
+    grid-template-rows: 0.5fr 1.2fr 1fr 4fr;
+    justify-items: center;
+
+}
+.vagas__botao{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    width: 110px;
+    color: var(--main-color);
+    background: var(--bg-color);
+    border: none;
+    border-radius: 16px;
+}
+.vagas__banner--titulo{
+    font-weight: 600;
+    font-size: 44px;
+    color: var(--second-color);
+    line-height: 60px;
+    align-self:center;
+}
+.vagas__banner--subtitulo{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 2em;
+}
+.vagas__banner--imagem{
+    max-width: 100%;
+}
+
+
+
+.vagas__abertas{
+    padding: 2em;
+    display: block;
+}
+.vagas__lista{
+    
+    width: 500px;
+    line-height: 2em;
+}
+.vaga__titulo{
+    color: var(--second-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+.vagas__item{
+    border:2px solid var(--border-color);
+    padding: 1em;
+    border-radius: 16px;
+    margin: 2em;
+}
+.vagas__item--titulo{
+    color: #101828;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.vagas__item--descicao{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/**********/
+
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+    border: 2px solid none;
+    border-radius: 16px;
+    background-color: var(--bg-color);
+    margin: 4em;
+}
+.depoimento__tag{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.depoimento__texto{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1em;
+}
+.depoimento__avatar{
+    padding: 1em;
+}
+.depoimento__nome{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5em;
+}
+.depoimento__profissao{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    padding: 0.5em;
+}
+
+/********/
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color2);
+    padding: 2em;
+}
+.formulario__titulo{
+    font-weight: 600;
+    font-size: 44px;
+    color: var(--second-color);
+    line-height: 60px;
+    align-self:center;
+    padding: 0.5em;
+}
+.formulario__subtitulo{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 2em;
+}
+.formulario__input{
+    padding: 1em;
+}
+.formulario__input--email{
+    line-height: 25px;
+    border-radius: 8px;
+    border:1px solid var(--border-color);
+    descent-override: none;
+    color: var(--text-color);
+}
+.formulario__input--botao{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    color: white;
+    font-size: 0.8em;
+    line-height: 25px;
+ 
+}
+.copyright{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 2em;
+    padding: 1em;
 }
